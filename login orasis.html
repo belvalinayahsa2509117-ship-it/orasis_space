@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <header class="navbar">
+    <div class="logo">
+            <img src="Logo-orasis-hitam.png" alt="Logo Orasis Art Space" class="logo">
+    </div>
+        
+   
+        <nav class="list" >
+            <b><a href="program museum.html">Suradaya - What Remains Unseen</a>
+            <a href="reservasi.html">Reservasi</a> 
+            <a href="ruang (arsitektur).html">Ruang</a>
+            <a href="pusat bantuan.html">FAQ</a>
+            <a href="login orasis.html">My Account</a></b>
+        </nav>
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+
+<!-- Label bertindak sebagai tombol yang diklik -->
+<label for="menu-toggle" class="menu-button">≡</label>
+
+<!-- Sidebar -->
+<nav class="sidebar">
+    <label for="menu-toggle" class="menu-button">X</label>
+        <a href="program museum.html">Suradaya - What Remains Unseen</a>
+        <a href="reservasi.html">Reservasi</a> 
+        <a href="ruang (arsitektur).html">Ruang</a>
+        <a href="pusat bantuan.html">FAQ</a>
+        <a href="login orasis.html">My Account</a></b>
+</nav>
+    </header>
+   
+   <main class="main-container">
+        
+    <div class="forms-wrapper">
+        
+        <!-- KOLOM KIRI: LOGIN -->
+        <section class="form-card">
+            <h2 class="form-title">Login</h2>
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="username">Username or email address <span class="required">*</span></label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+
+                <div class="form-action-row">
+                    <button type="submit" class="btn-primary">Log in</button>
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+
+                <a href="#" class="link-danger">Lost your password?</a>
+            </form>
+        </section>
+
+        <!-- KOLOM KANAN: FORMULIR RESERVASI & PEMBAYARAN -->
+        <section class="form-card">
+            <h2 class="form-title">Reservasi Pameran</h2>
+            <p class="event-subtitle">Memory of Peru – Where Traces Linger</p>
+
+            <!-- GANTI EMAIL_KAMU@gmail.com DENGAN EMAIL ADMIN KAMU -->
+            <form action="https://formsubmit.co/yahsabebelvabelva@gmail.com" method="POST" class="form-body">
+                
+                <!-- Agar tidak perlu verifikasi captcha berulang -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- 1. Text Box Nama -->
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap Pemesan <span class="required">*</span></label>
+                    <input type="text" id="nama" name="Nama Pemesan" class="form-control" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <!-- 2. Format Text Box (Email & Telepon) -->
+                <div class="form-group">
+                    <label for="email">Email Konfirmasi E-Tiket <span class="required">*</span></label>
+                    <input type="email" id="email" name="Email" class="form-control" placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hp">Nomor WhatsApp / HP <span class="required">*</span></label>
+                    <input type="tel" id="hp" name="No WhatsApp" class="form-control" placeholder="081234567890" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Kunjungan <span class="required">*</span></label>
+                    <input type="date" id="tanggal" name="Tanggal Kunjungan" class="form-control" value="2026-10-15" required>
+                </div>
+
+                <!-- 3. Drop-down List -->
+                <div class="form-group">
+                    <label for="sesi">Sesi Jam Kunjungan <span class="required">*</span></label>
+                    <select id="sesi" name="Sesi Kunjungan" class="form-control" required>
+                        <option value="">-- Pilih Sesi --</option>
+                        <option value="Sesi 1 (11.00 - 13.00 WIB)">Sesi 1 (11.00 - 13.00 WIB)</option>
+                        <option value="Sesi 2 (13.30 - 15.30 WIB)">Sesi 2 (13.30 - 15.30 WIB)</option>
+                        <option value="Sesi 3 (16.00 - 18.00 WIB)">Sesi 3 (16.00 - 18.00 WIB)</option>
+                    </select>
+                </div>
+
+                <!-- 4. Radio Button Kategori Tiket -->
+                <div class="form-group">
+                    <label class="group-title">Kategori Pengunjung <span class="required">*</span></label>
+                    <div class="options-list">
+                        <label class="option-item">
+                            <input type="radio" name="Kategori Tiket" value="Pengunjung Umum (Rp88.000)" required>
+                            <span>Pengunjung Umum (Rp88.000)</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="Kategori Tiket" value="Pelajar / Mahasiswa (Rp50.000)" required>
+                            <span>Pelajar / Mahasiswa (Rp50.000)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 5. Check Box Fasilitas -->
+                <div class="form-group">
+                    <label class="group-title">Fasilitas Tambahan (Opsional):</label>
+                    <div class="options-list">
+                        <label class="option-item">
+                            <input type="checkbox" name="Fasilitas[]" value="Pemandu Tur (Guided Tour)">
+                            <span>Pemandu Tur (Guided Tour)</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="Fasilitas[]" value="Postcard Merchandise">
+                            <span>Postcard Merchandise</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- OPSI PEMBAYARAN BARU -->
+                <div class="form-group">
+                    <label class="group-title">Metode Pembayaran <span class="required">*</span></label>
+                    <div class="options-list">
+                        <label class="option-item">
+                            <input type="radio" name="Metode Pembayaran" value="QRIS / E-Wallet" required>
+                            <span>QRIS / E-Wallet (GoPay, OVO, ShopeePay)</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="Metode Pembayaran" value="Transfer Bank Virtual Account" required>
+                            <span>Transfer Bank (BCA / Mandiri / BNI)</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="Metode Pembayaran" value="Bayar di Galeri (OTS)" required>
+                            <span>Bayar di Lokasi Galeri (OTS)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 6. Command Button -->
+                <div class="form-action-row">
+                    <button type="submit" class="btn-primary">Konfirmasi & Bayar</button>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+</main>
+
+ <div class="operasional">
+       
+          <p><b>WAKTU OPERASIONAL</b></p> 
+           <ul>
+              <li><b>Selasa-Kamis:</b> 10.00-18.00 WIB</li>
+              <li><b>Jumat-Minggu:</b> 10.00-20.00 WIB</li>
+           </ul>
+
+           <p><b>Alamat:</b> <br> Jl. Bukit Golf No.B2-25
+Kota Surabaya, Jawa Timur
+60219</p>
+
+           <p><b>Kontak:</b> <br> +62 31
+        </div>
+    
+    
+    <footer class="hak-cipta">
+      <p>Hak cipta &copy; 2026 Orasis Art Space Pemrograman Web-Belvalina Yahsa/250911701591</p>
+    </footer>
+</body>
+</html>
+
+
+

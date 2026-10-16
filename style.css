@@ -1,0 +1,827 @@
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+body {
+    background-color: white;
+}
+
+/* NAVBAR ATAS (putih) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid blue;  
+}
+
+.nav-link {
+    right: 20px;
+    
+}
+
+h1{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.welcome{
+    font-size: 40px;
+    color: #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif
+} 
+
+nav {
+  display: flex;
+    justify-content: flex-end; 
+    gap: 25px;                 
+    padding: 15px 30px;  
+    background-color:#ffffff;
+}
+
+nav a{
+    color: #00008b;
+    text-decoration: solid;
+    margin-right: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    
+}
+
+.tentang{
+    background-color:#f9f9f7;
+    padding: 90px;           
+    border-radius: 8px;
+
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Keadaan awal sidebar (sembunyi) */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  width: 200px;
+  height: 100vh;
+}
+
+.sidebar a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* KETIKA CHECKBOX DICENTANG (di-klik), TAMPILKAN SIDEBAR */
+#menu-toggle:checked ~ .sidebar {
+  display: block;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+p{
+    font-size: 23px;
+    max-width: 900px; 
+    line-height: 1.5;  
+    word-wrap: break-word;
+}
+
+.visi-misi-foto{
+    background-color:#f9f9f7;
+    display: flex;
+    align-items: flex-start;          
+    padding: 0 40px;
+    line-height: 1.5; 
+    word-wrap: break-word;
+    gap: 30px;                 
+    padding: 20px 20px; 
+    font-size: 25px;
+    border-bottom: 1px solid #0000ff;
+    border-top: 1px solid #0000ff;
+}
+
+.section-block{
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+    margin-left: 0;
+    margin-right: 40px;
+    background-color:#f9f9f7;
+}
+
+  /* uk foto beranda */
+.foto-galeri {
+    width: 500px;     
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.history{
+    background-color:#f9f9f7;
+    padding: 90px;           
+    border-radius: 8px;
+    line-height: 1.5;  
+    word-wrap: break-word;
+font-size: 35px;
+}
+
+.history h3 {
+    color: darkblue;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.operasional{
+    background-color:#f9f9f7;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+    margin-left: 0;
+    margin-right: 0px;
+    gap: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid blue; 
+    border-top: 1px solid blue; 
+    
+}
+
+.hak-cipta p{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+
+
+
+
+
+
+     /*   MEMORY OF PERU   */
+.main-menu{
+    background-image: url('fotito.jpg');
+    padding: 90px;           
+    border-radius: 8px;
+    line-height: 1.5; 
+    word-wrap: break-word;
+}
+
+.main-menu p{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.box{
+  background-color:aliceblue;
+  font-size: 20px;
+   width:100%;
+  overflow:auto;
+  text-align:center;
+  box-sizing: border-box;
+  gap: 20px;
+
+}
+  
+.box div{
+    width:33%;
+   width: 30%;
+  display: inline-block;
+  gap: 20px;
+
+}
+
+.schedules {
+    background-color: #f9f9f7;
+    padding: 90px;           
+    border-radius: 8px;
+    line-height: 1.5; 
+    word-wrap: break-word;
+    font-size: 25px;
+    border-top: 1px solid blue;
+}
+
+.techne {
+    background-color: #f9f9f7;
+    padding: 90px;           
+    border-radius: 8px;
+    word-wrap: break-word;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    border-top: 1px solid blue;
+    gap: 20px;
+}   
+
+.information{
+    background-color:#f9f9f7;
+    padding: 90px;           
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;             /* Mengubah layout jadi menyamping */
+    align-items: flex-start;   /* Memaksa kolom kanan NAIK SEJAJAR ke paling atas */
+    gap: 40px;                  /* Jarak antar kolom */
+  }
+
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+}
+
+.right-column {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  color: #2b2b2b;
+  font-size: 0.95rem;
+}
+
+/* Styling Judul Setiap Section (H3) */
+.right-column h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Jarak Antar Section */
+.right-column .section {
+  margin-bottom: 28px;
+}
+
+/* Styling Paragraf di Dalam Section */
+.right-column .section p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Styling Daftar Jadwal (Schedules) */
+.schedule-list {
+  list-style: none; /* Menghilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+/* Styling Tautan Teks Merah ("Click here") */
+.link-red {
+  color: #d93850;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Efek Hover Pada Tautan */
+.link-red:hover {
+  text-decoration: underline;
+}
+
+
+
+       /*RUANG*/
+.main-menu2{
+    background-image: url('eksterior-bangunan-sangat.jpg');
+    padding: 500px;           
+    border-radius: 8px;
+    line-height: 1.5; 
+    word-wrap: break-word;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Kolom Kanan (Teks) */
+.text-section {
+  flex: 1;
+  padding-top: 40px;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.text-section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Responsive untuk layar HP */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+
+/*slide*/
+/* 1. Galeri Geser Horisontal (Murni CSS) */
+.div h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00008b;
+}
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Membuat scroll terasa pas di tengah foto */
+  padding-bottom: 10px;
+}
+
+.gallery-container img {
+  width: 70vw;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 4px;
+}
+
+/* 2. Lightbox Pop-Up Menggunakan CSS :target */
+.lightbox {
+  display: none; /* Sembunyi secara default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Saat link diklik (id sesuai #img1, #img2, dst) */
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.caption {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+
+/* CARD GALERI */
+.gallery-card {
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Gambar Galeri */
+.gallery-image-container {
+  width: 100%;
+  height: 520px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.gallery-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Banner Warna Oranye */
+.gallery-info-banner {
+  background-color: #ff5232;
+  color: #ffffff;
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Judul Galeri di Kiri */
+.gallery-title {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* Tabel Detail Informasi di Kanan */
+.gallery-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.detail-label {
+  opacity: 0.95;
+}
+
+.detail-value {
+  text-align: right;
+}
+
+/* MEDIA QUERY RESPONSIF (Tampilan Mobile) */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 15px;
+  }
+  
+  .nav-menu li:not(:last-child) {
+    display: none;
+  }
+
+  .gallery-image-container {
+    height: 320px;
+  }
+
+
+  .gallery-info-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .gallery-details {
+    width: 100%;
+  }
+}
+
+/* Sembunyikan gambar secara default */
+.slide-img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tampilkan hanya gambar yang aktif */
+.slide-img.active {
+  display: block;
+}
+
+/* Styling Tombol Panah Kiri & Kanan */
+.slider-btn {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
+}
+
+     /*RESERVASI*/
+.card-container {
+      max-width: 960px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 36px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f0f0f0;
+    }
+
+    .card h2 {
+      font-family: 'Georgia', serif;
+      font-size: 30px;
+      margin: 0 0 12px 0;
+      color: #111;
+      font-weight: normal;
+    }
+
+    .card p.description {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: bold;
+      color: #222222;
+      margin: 0 0 20px 0;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .date-info {
+      font-size: 19px;
+      font-weight: bold;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-reservasi {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #ff4d2e;
+      color: #ff4d2e;
+      background: transparent;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-reservasi:hover {
+      background-color: #ff4d2e;
+      color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f7;
+    color: #333333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================
+   MAIN CONTENT & LAYOUT
+   ========================================== */
+.main-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 60px 20px;
+    flex-grow: 1;
+}
+
+.forms-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.event-subtitle {
+    font-family: georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #cb5a4b;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label, .group-title {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #cb5a4b;
+}
+
+.form-control {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    background-color: #fcfbf9;
+    border: 1px solid #d5d1c8;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Validasi Visual CSS (Persyaratan Tugas) */
+.form-control:focus:invalid {
+    border-color: #cb5a4b !important;
+    box-shadow: 0 0 4px rgba(203, 90, 75, 0.3);
+}
+
+.form-control:focus:valid {
+    border-color: #3b9fb4 !important;
+    box-shadow: 0 0 4px rgba(59, 159, 180, 0.3);
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #444;
+    cursor: pointer;
+}
+
+.option-item input {
+    accent-color: #3b9fb4;
+    width: 15px;
+    height: 15px;
+}
+
+.form-action-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.btn-primary {
+    background-color: #3b9fb4;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2e8396;
+}
+
+.remember-me {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link-danger {
+    color: #cb5a4b;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.link-danger:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    border-top: 1px solid #e2ded7;
+    padding: 24px 60px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .forms-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+    
